@@ -1,0 +1,113 @@
+main {
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+article {
+    background-color: var(--cor-cinza-claro);
+    padding: 20px 25px;
+}
+
+#centralizar-cardapio {
+    position: relative;
+    height: 60px;
+}
+
+#icone-cardapio {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#icone-cardapio > img {
+    height: 20px;
+    margin-top: 2.5px;
+    margin-right: 5px;
+}
+
+#icone-cardapio > h2 {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+@media (width >= 600px) {
+    .centralizar-opcoes-cardapio {
+        display: flex;
+    }
+
+    .opcoes-cardapio {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (width <=600px) {
+    .opcoes-cardapio {
+        margin: 20px auto;
+    }
+}
+
+.opcoes-cardapio {
+    width: 250px;
+}
+
+#centralizar-carne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carne {
+    background: var(--cor-preta) url('../img/churrasco-menu.jpg') center center no-repeat scroll;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#centralizar-sobremesa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobremesa {
+    background: var(--cor-preta) url('../img/sobremesa-menu.jpg') center center no-repeat scroll;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#centralizar-bebida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bebida {
+    background: var(--cor-preta) url('../img/bebida-menu.jpeg') center center no-repeat scroll;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.titulo-cardapio {
+    text-align: center;
+    color: var(--cor-laranja);
+    margin: 20px 0px; 
+}
+
+.texto-cardapio {
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0px 20px 20px;
+}

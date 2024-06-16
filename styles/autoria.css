@@ -1,0 +1,18 @@
+footer > #autoria {
+    background-color: var(--cor-branca);   
+}
+
+footer > #autoria > p {
+    text-align: center;
+    padding: 5px;
+}
+
+footer > #autoria > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-preta);
+}
+
+footer > #autoria > p > a:hover {
+    color: var(--cor-laranja);
+}

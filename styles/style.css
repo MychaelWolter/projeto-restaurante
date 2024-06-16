@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: "Patrick Hand", cursive;
+
+    --cor-laranja: #ff5e00;
+    --cor-marrom: #40240C;
+    --cor-cinza-claro: rgb(240, 240, 240);
+    --cor-preta: #000000;
+    --cor-branca: #ffffff;
+}
+
+body {
+    font-family: var(--font-padrao);
+}

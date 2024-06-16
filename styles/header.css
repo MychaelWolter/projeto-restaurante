@@ -1,0 +1,39 @@
+header {
+    height: 70px;
+    display: flex;
+}
+
+header > div {
+    margin: 10px 20px 10px 40px;
+}
+
+header > div > img {
+    height: 50px;
+    width: 50px;
+}
+
+header > nav {
+    margin: auto;
+}
+
+header > nav > a {
+    padding: 30px 10px;
+    text-decoration: none;
+    color: var(--cor-preta);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    font-size: 0.9em;
+}
+
+@media (width <= 500px) {
+    header > nav > a {
+        font-size: 0.5em;
+        padding: 33px 10px;
+    }
+}
+
+header > nav > a:hover {
+    background-color: var(--cor-laranja);
+    color: var(--cor-branca);
+    transition-duration: 0.5s;
+}
