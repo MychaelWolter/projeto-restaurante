@@ -87,6 +87,11 @@ footer > #main-footer {
     margin: 5px 0px;
 }
 
+#contato > .numero {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
 #alinhar-contato {
     display: inline-block;
 }
