@@ -45,41 +45,74 @@ footer > #main-footer {
     padding: 0px 20px;
 }
 
-#nome {
+#inome {
+    width: 250px;
     background-color: var(--cor-branca);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    border: none;
 }
 
-#e-mail {
+#inome:focus {
+    outline: none;
+}
+
+#imail {
+    width: 250px;
     background-color: var(--cor-branca);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    border: none;
 }
 
-#assunto {
+#imail:focus {
+    outline: none;
+}
+
+#iassunto {
+    width: 250px;
     background-color: var(--cor-branca);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    border: none;
 }
 
-#mensagem {
+#iassunto:focus {
+    outline: none;
+}
+
+#imensagem {
+    width: 250px;
     background-color: var(--cor-branca);
     padding: 10px 10px 40px;
     margin-bottom: 10px;
     border-radius: 5px;
+    border: none;
+}
+
+#imensagem:focus {
+    outline: none;
 }
 
 #enviar {
     background-color: var(--cor-branca);
+    color: var(--cor-preta);
     width: 100px;
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: bold;
     border-radius: 5px;
+    border: none;
+}
+
+#enviar:hover {
+    background-color: var(--cor-laranja);
+    color: var(--cor-branca);
+    transition-duration: 0.5s;
 }
 
 #contato > p {
@@ -101,7 +134,13 @@ footer > #main-footer {
     margin-right: 5px;
 }
 
-#alinhar-contato > a > img{
+#alinhar-contato > a > img {
     height: 20px;
     width: 20px;
+}
+
+#alinhar-contato > a > img:hover {
+    background-color: var(--cor-branca);
+    border-radius: 50%;
+    transition-duration: 0.5s;
 }

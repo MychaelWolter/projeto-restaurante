@@ -15,4 +15,5 @@ footer > #autoria > p > a {
 
 footer > #autoria > p > a:hover {
     color: var(--cor-laranja);
+    transition-duration: 0.5s;
 }

@@ -1,6 +1,6 @@
 section#fundo-churrasco {
     height: 500px;
-    background: var(--cor-preta) url('../img/fundo-churrasco.jpg') center center no-repeat fixed;
+    background: var(--cor-preta) url('../image/fundo-churrasco.jpg') center center no-repeat fixed;
     background-size: cover;
     position: relative;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);

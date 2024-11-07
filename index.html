@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Restaurante</title>
 
-    <link rel="shortcut icon" href="img/logo-churrascaria.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="image/logo-churrascaria.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/churrasco.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -17,7 +17,7 @@
 <body>
     <header>
         <div>
-            <img src="img/logo-churrascaria.jpg" alt="Logo-Churrascaria" id="inicio">
+            <img src="image/logo-churrascaria.jpg" alt="Logo-Churrascaria" id="inicio">
         </div>
         <nav>
             <a href="#inicio">INÍCIO</a>
@@ -36,7 +36,7 @@
         <article>
             <div id="centralizar-cardapio">
                 <div id="icone-cardapio">
-                    <img src="img/icone-cardapio.png" alt="Icone-Cardapio">
+                    <img src="image/icone-cardapio.png" alt="Icone-Cardapio">
                     <h2 id="cardapio">CARDÁPIO</h2>
                 </div>
             </div>
@@ -69,37 +69,47 @@
         <aside>
             <div id="centralizar-cardapio">
                 <div id="icone-cardapio">
-                    <img src="img/icone-fotos.png" alt="Icone-Fotos">
+                    <img src="image/icone-fotos.png" alt="Icone-Fotos">
                     <h2 id="fotos">FOTOS</h2>
                 </div>
             </div>
             <div id="centralizar-fotos">
-                <img src="img/img/churrasco-1.jpeg" alt="Foto-Churrasco-1">
-                <img src="img/img/churrasco-2.jpeg" alt="Foto-Churrasco-2">
-                <img src="img/img/churrasco-3.jpeg" alt="Foto-Churrasco-3">
-                <img src="img/img/churrasco-4.jpeg" alt="Foto-Churrasco-4">
-                <img src="img/img/churrasco-5.jpeg" alt="Foto-Churrasco-5">
-                <img src="img/img/churrasco-6.jpeg" alt="Foto-Churrasco-6">
-                <img src="img/img/churrasco-7.jpeg" alt="Foto-Churrasco-7">
-                <img src="img/img/churrasco-8.jpeg" alt="Foto-Churrasco-8">
+                <img src="image/image/churrasco-1.jpeg" alt="Foto-Churrasco-1">
+                <img src="image/image/churrasco-2.jpeg" alt="Foto-Churrasco-2">
+                <img src="image/image/churrasco-3.jpeg" alt="Foto-Churrasco-3">
+                <img src="image/image/churrasco-4.jpeg" alt="Foto-Churrasco-4">
+                <img src="image/image/churrasco-5.jpeg" alt="Foto-Churrasco-5">
+                <img src="image/image/churrasco-6.jpeg" alt="Foto-Churrasco-6">
+                <img src="image/image/churrasco-7.jpeg" alt="Foto-Churrasco-7">
+                <img src="image/image/churrasco-8.jpeg" alt="Foto-Churrasco-8">
             </div>
         </aside>
     </main>
     <footer>
         <div id="centralizar-cardapio">
             <div id="icone-cardapio">
-                <img src="img/mensagem.png" alt="Icone-Fotos">
+                <img src="image/mensagem.png" alt="Icone-Fotos">
                 <h2 id="fale-conosco">FALE CONOSCO</h2>
             </div>
         </div>
         <section id="main-footer">
-            <div id="cadastro">
-                <p id="nome">Nome</p>
-                <p id="e-mail">E-mail</p>
-                <p id="assunto">Assunto</p>
-                <p id="mensagem">Deixe sua mensagem</p>
-                <p id="enviar">Enviar</p>
-            </div>
+            <form action="#" method="post" id="cadastro">
+                <div>
+                    <input type="text" name="nome" id="inome" placeholder="Nome" maxlength="30">
+                </div>
+                <div>
+                    <input type="email" name="mail" id="imail" placeholder="E-mail" maxlength="50">
+                </div>
+                <div>
+                    <input type="text" name="assunto" id="iassunto" placeholder="Assunto" maxlength="50">
+                </div>
+                <div>
+                    <textarea name="mensagem" id="imensagem" rows="5" maxlength="255"></textarea>
+                </div>
+                <div>
+                    <input type="reset" value="Enviar" id="enviar" onclick="mensagemMail()">
+                </div>
+            </form>
             <div id="contato">
                 <p>contato@seusite.com</p>
                 <p class="numero">92 0000-0000</p>
@@ -109,16 +119,16 @@
                 <p>9:00 às 18:00</p>
                 <div id="alinhar-contato">
                     <a href="#">
-                        <img src="img/img/facebook-logo.png" alt="Facebook">
+                        <img src="image/image/facebook-logo.png" alt="Facebook">
                     </a>
                     <a href="#">
-                        <img src="img/img/twitter-logo.png" alt="Twitter">
+                        <img src="image/image/twitter-logo.png" alt="Twitter">
                     </a>
                     <a href="#">
-                        <img src="img/img/pinterest-logo.png" alt="Pinterest">
+                        <img src="image/image/pinterest-logo.png" alt="Pinterest">
                     </a>
                     <a href="#">
-                        <img src="img/img/instagram-logo.png" alt="Instagram">
+                        <img src="image/image/instagram-logo.png" alt="Instagram">
                     </a>
                 </div>
             </div>
@@ -127,5 +137,6 @@
             <p>Copyright &copy;. Tema Churrascaria 2024. Densenvolvido por <a href="https://www.instagram.com/wolterzx/" target="_blank" rel="external">Mychael Wolter</a></p>
         </section>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

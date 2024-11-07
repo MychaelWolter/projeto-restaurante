@@ -62,7 +62,7 @@ article {
 }
 
 #carne {
-    background: var(--cor-preta) url('../img/churrasco-menu.jpg') center center no-repeat scroll;
+    background: var(--cor-preta) url('../image/churrasco-menu.jpg') center center no-repeat scroll;
     background-size: cover;
     height: 150px;
     width: 150px;
@@ -79,7 +79,7 @@ article {
 }
 
 #sobremesa {
-    background: var(--cor-preta) url('../img/sobremesa-menu.jpg') center center no-repeat scroll;
+    background: var(--cor-preta) url('../image/sobremesa-menu.jpg') center center no-repeat scroll;
     background-size: cover;
     height: 150px;
     width: 150px;
@@ -93,7 +93,7 @@ article {
 }
 
 #bebida {
-    background: var(--cor-preta) url('../img/bebida-menu.jpeg') center center no-repeat scroll;
+    background: var(--cor-preta) url('../image/bebida-menu.jpeg') center center no-repeat scroll;
     background-size: cover;
     height: 150px;
     width: 150px;
