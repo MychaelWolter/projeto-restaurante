@@ -32,8 +32,8 @@ footer > #main-footer {
     }
 
     #cadastro, #contato {
-        max-width: 300px;
-        padding: 0px 20px;
+        max-width: 700px;
+        padding: 10px 20px;
     }
 
     #enviar {
@@ -47,7 +47,7 @@ footer > #main-footer {
 }
 
 #inome {
-    width: 250px;
+    width: 90%;
     background-color: var(--cor-branca);
     padding: 10px;
     margin-bottom: 10px;
@@ -60,7 +60,7 @@ footer > #main-footer {
 }
 
 #imail {
-    width: 250px;
+    width: 90%;
     background-color: var(--cor-branca);
     padding: 10px;
     margin-bottom: 10px;
@@ -73,7 +73,7 @@ footer > #main-footer {
 }
 
 #iassunto {
-    width: 250px;
+    width: 90%;
     background-color: var(--cor-branca);
     padding: 10px;
     margin-bottom: 10px;
@@ -86,7 +86,7 @@ footer > #main-footer {
 }
 
 #imensagem {
-    width: 250px;
+    width: 90%;
     background-color: var(--cor-branca);
     padding: 10px 10px 40px;
     margin-bottom: 10px;
