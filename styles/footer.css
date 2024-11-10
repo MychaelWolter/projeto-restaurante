@@ -1,10 +1,10 @@
 footer {
     background-color: var(--cor-marrom);
+    position: relative;
 }
 
 footer > div > div > h2 {
     color: var(--cor-branca);
-    text-align: center;
 }
 
 footer > #main-footer {
@@ -42,17 +42,18 @@ footer > #main-footer {
 }
 
 #cadastro, #contato {
-    width: 400px;
+    max-width: 400px;
     padding: 0px 20px;
 }
 
 #inome {
     width: 90%;
     background-color: var(--cor-branca);
-    padding: 10px;
+    padding: 13px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 #inome:focus {
@@ -62,10 +63,11 @@ footer > #main-footer {
 #imail {
     width: 90%;
     background-color: var(--cor-branca);
-    padding: 10px;
+    padding: 13px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 #imail:focus {
@@ -75,10 +77,11 @@ footer > #main-footer {
 #iassunto {
     width: 90%;
     background-color: var(--cor-branca);
-    padding: 10px;
+    padding: 13px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 #iassunto:focus {
@@ -88,26 +91,43 @@ footer > #main-footer {
 #imensagem {
     width: 90%;
     background-color: var(--cor-branca);
-    padding: 10px 10px 40px;
+    padding: 13px 13px 40px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 #imensagem:focus {
     outline: none;
 }
 
+#span-mensagem {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-laranja);
+    color: var(--cor-branca);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
 #enviar {
     background-color: var(--cor-branca);
     color: var(--cor-preta);
     width: 100px;
-    padding: 10px;
+    padding: 13px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
     border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 #enviar:hover {
