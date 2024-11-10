@@ -136,6 +136,12 @@ footer > #main-footer {
     transition-duration: 0.5s;
 }
 
+#enviar:active {
+    background-color: var(--cor-laranja);
+    color: var(--cor-branca);
+    transition-duration: 0.5s;
+}
+
 #contato > p {
     color: var(--cor-cinza-claro);
     margin: 5px 0px;
