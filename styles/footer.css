@@ -2,9 +2,13 @@ footer {
     background-color: var(--cor-marrom);
     position: relative;
 }
-
-footer > div > div > h2 {
+footer > div > div#icone-cardapio {
     color: var(--cor-branca);
+    text-align: center;
+}
+
+footer > div > div > span {
+    transform: translate(-6px, 2px);
 }
 
 footer > #main-footer {
@@ -42,7 +46,7 @@ footer > #main-footer {
 }
 
 #cadastro, #contato {
-    max-width: 400px;
+    width: 50%;
     padding: 0px 20px;
 }
 
@@ -112,6 +116,7 @@ footer > #main-footer {
     color: var(--cor-branca);
     padding: 20px;
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -124,10 +129,11 @@ footer > #main-footer {
     padding: 13px;
     margin-bottom: 10px;
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     font-weight: bold;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 #enviar:hover {

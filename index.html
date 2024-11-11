@@ -6,6 +6,9 @@
     <title>Projeto Restaurante</title>
 
     <link rel="shortcut icon" href="image/logo-churrascaria.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/churrasco.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -19,7 +22,18 @@
         <div>
             <img src="image/logo-churrascaria.jpg" alt="Logo-Churrascaria" id="inicio">
         </div>
-        <nav>
+        <nav id="menu">
+            <button id="menu-icon" onclick="menuButton()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div id="menu-list">
+                <a href="#inicio">INÍCIO</a>
+                <a href="#cardapio">CARDÁPIO</a>
+                <a href="#fotos">FOTOS</a>
+                <a href="#fale-conosco">CONTATO</a>
+            </div>
+        </nav>
+        <nav id="navegador">
             <a href="#inicio">INÍCIO</a>
             <a href="#cardapio">CARDÁPIO</a>
             <a href="#fotos">FOTOS</a>
@@ -88,7 +102,7 @@
     <footer>
         <div id="centralizar-cardapio">
             <div id="icone-cardapio">
-                <img src="image/mensagem.png" alt="Icone-Fotos">
+                <span class="material-symbols-outlined">mail</span>
                 <h2 id="fale-conosco">FALE CONOSCO</h2>
             </div>
         </div>
