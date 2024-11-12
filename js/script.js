@@ -14,4 +14,4 @@ function mensagemMail() {
     setTimeout(() => {
         mensagem.classList.remove("mostrar");
     }, 3000);
-}
+};
