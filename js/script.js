@@ -7,11 +7,11 @@ function menuButton(){
     };
 };
 
-function mensagemMail(){
+function mensagemMail() {
     const mensagem = document.getElementById("span-mensagem");
-    mensagem.style.display = "block";
+    mensagem.classList.add("mostrar");
 
-    setTimeout(()=>{
-        mensagem.style.display = "none";
-    },3000);
-};
+    setTimeout(() => {
+        mensagem.classList.remove("mostrar");
+    }, 3000);
+}
