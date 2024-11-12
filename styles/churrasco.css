@@ -22,6 +22,14 @@ section#fundo-churrasco > div > h1 {
     text-shadow: 1px 1px 2px black;
 }
 
+section#fundo-churrasco > div > p {
+    color: var(--cor-branca);
+    font-family: var(--font-destaque);
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--cor-preta);
+}
+
 @media (width <= 500px) {
     section#fundo-churrasco > div > h1 {
         font-size: 2.8em;
@@ -30,12 +38,4 @@ section#fundo-churrasco > div > h1 {
     section#fundo-churrasco > div > p {
         font-size: 1em;
     }
-}
-
-section#fundo-churrasco > div > p {
-    color: var(--cor-branca);
-    font-family: var(--font-destaque);
-    font-size: 1.5em;
-    text-align: center;
-    text-shadow: 1px 1px 2px var(--cor-preta);
 }

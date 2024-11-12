@@ -5,7 +5,10 @@ header {
 
 header > div {
     width: 5%;
-    margin: 10px 20px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 40px;
 }
 
 header > div > img {
@@ -45,7 +48,7 @@ header > div#user-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 30px 10px 0px;
+    margin: 10px 30px;
 }
 
 div#user-container > a > span {
@@ -61,7 +64,7 @@ div#user-container > a > span:active {
     color: var(--cor-laranja);
 }
 
-@media (width <= 550px) {
+@media (width <= 565px) {
     header > nav#menu {
         width: 100%;
         display: flex;
@@ -74,7 +77,7 @@ div#user-container > a > span:active {
         background-color: var(--cor-branca);
         padding: 10px;
         border: none;
-        margin: 10px 10px 10px 20px;
+        margin: 10px 0px 10px 20px;
     }
 
     header > nav#menu > button:hover {

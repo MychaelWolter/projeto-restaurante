@@ -1,3 +1,5 @@
+/* HEADER DO FOOTER*/
+
 footer {
     background-color: var(--cor-marrom);
     position: relative;
@@ -11,6 +13,8 @@ footer > div > div > span {
     transform: translate(-6px, 2px);
 }
 
+/*FORMULARIO*/
+
 footer > #main-footer {
     max-width: 800px;
     display: flex;
@@ -20,35 +24,6 @@ footer > #main-footer {
 #cadastro, #contato {
     width: 23em;
     padding: 0px 20px;
-}
-
-@media (width <= 700px) {
-    footer > div > div {
-        margin: 20px auto;
-    }
-
-    footer > div > div > h2 {
-        margin-bottom: 20px;
-        font-size: 1em;
-    }
-
-    footer > #main-footer {
-        display: block;
-        width: 100%;
-    }
-
-    footer > #main-footer > #contato {
-        margin-top: 30px;
-    }
-
-    #cadastro, #contato {
-        max-width: 90%;
-        padding: 10px 20px;
-    }
-
-    #enviar {
-        max-width: 100px;
-    }
 }
 
 #inome {
@@ -141,6 +116,7 @@ footer > #main-footer {
     background-color: var(--cor-laranja);
     color: var(--cor-branca);
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 #enviar:active {
@@ -148,6 +124,8 @@ footer > #main-footer {
     color: var(--cor-branca);
     transition-duration: 0.5s;
 }
+
+/*INFORMAÇOES DE CONTATO*/
 
 #contato > p {
     color: var(--cor-cinza-claro);
@@ -171,10 +149,42 @@ footer > #main-footer {
 #alinhar-contato > a > img {
     height: 20px;
     width: 20px;
+    border: 1px solid transparent;
 }
 
 #alinhar-contato > a > img:hover {
     background-color: var(--cor-branca);
     border-radius: 50%;
+    border: 1px solid var(--cor-branca);
     transition-duration: 0.5s;
+    transform: translateY(-2px);
+}
+
+@media (width <= 700px) {
+    footer > div > div {
+        margin: 20px auto;
+    }
+
+    footer > div > div > h2 {
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+
+    footer > #main-footer {
+        display: block;
+        width: 100%;
+    }
+
+    footer > #main-footer > #contato {
+        margin-top: 30px;
+    }
+
+    #cadastro, #contato {
+        max-width: 90%;
+        padding: 10px 20px;
+    }
+
+    #enviar {
+        max-width: 100px;
+    }
 }
