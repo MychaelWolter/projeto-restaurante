@@ -1,7 +1,8 @@
 function menuButton(){
     const menu = document.getElementById("menu-list");
+    
     if(menu.style.display === "none" && window.innerWidth <= 500){
-       menu.style.display = "block";
+        menu.style.display = "block";
     }else{
         menu.style.display = "none";
     };
