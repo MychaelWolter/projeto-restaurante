@@ -4,8 +4,7 @@ header {
 }
 
 header > div {
-    float: left;
-    width: 10%;
+    width: 5%;
     margin: 10px 20px 10px 40px;
 }
 
@@ -41,6 +40,26 @@ header > nav#navegador > a:hover {
     transition-duration: 0.5s;
 }
 
+header > div#user-container {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#user-container > a > span {
+    color: var(--cor-preta);
+}
+
+div#user-container > a > span:hover {
+    color: var(--cor-laranja);
+    transition-duration: 0.5s;
+}
+
+div#user-container > a > span:active {
+    color: var(--cor-laranja);
+}
+
 @media (width <= 500px) {
     header > nav#menu {
         width: 100%;
@@ -52,6 +71,7 @@ header > nav#navegador > a:hover {
 
     header > nav#menu > button {
         background-color: var(--cor-branca);
+        padding: 10px;
         border: none;
     }
 
@@ -68,7 +88,7 @@ header > nav#navegador > a:hover {
     div#menu-list {
         display: none;
         position: absolute;
-        top: 6%;
+        top: 7%;
         right: 0;
         background-color: var(--cor-branca);
         padding: 5px 20px;
@@ -90,6 +110,10 @@ header > nav#navegador > a:hover {
     }
 
     header > nav#navegador {
+        display: none;
+    }
+
+    header > div#user-container {
         display: none;
     }
 }

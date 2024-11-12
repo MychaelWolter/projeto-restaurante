@@ -6,7 +6,7 @@
     <title>Projeto Restaurante</title>
 
     <link rel="shortcut icon" href="image/logo-churrascaria.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/churrasco.css">
@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <div>
-            <img src="image/logo-churrascaria.jpg" alt="Logo-Churrascaria" id="inicio">
+            <img src="image/logo-churrascaria.jpg" alt="Logo-Churrascaria">
         </div>
         <nav id="menu">
             <button id="menu-icon" onclick="menuButton()">
@@ -27,6 +27,7 @@
             </button>
             <div id="menu-list">
                 <a href="#inicio">INÍCIO</a>
+                <a href="login-page/login.html">CADASTRO</a>
                 <a href="#cardapio">CARDÁPIO</a>
                 <a href="#fotos">FOTOS</a>
                 <a href="#fale-conosco">CONTATO</a>
@@ -38,6 +39,11 @@
             <a href="#fotos">FOTOS</a>
             <a href="#fale-conosco">CONTATO</a>
         </nav>
+        <div id="user-container">
+            <a href="login-page/login.html" id="user">
+                <span class="material-symbols-outlined">person</span>
+            </a>
+        </div>
     </header>
     <section id="fundo-churrasco">
         <div>
@@ -107,7 +113,7 @@
         </div>
         <section id="main-footer">
             <form action="#" method="post" id="cadastro">
-                <div>
+                <div class="largura-form">
                     <input type="text" name="nome" id="inome" placeholder="Nome" maxlength="30">
                 </div>
                 <div>

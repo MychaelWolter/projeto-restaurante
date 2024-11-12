@@ -17,6 +17,11 @@ footer > #main-footer {
     margin: 20px auto;
 }
 
+#cadastro, #contato {
+    width: 23em;
+    padding: 0px 20px;
+}
+
 @media (width <= 700px) {
     footer > div > div {
         margin: 20px auto;
@@ -29,6 +34,7 @@ footer > #main-footer {
 
     footer > #main-footer {
         display: block;
+        width: 100%;
     }
 
     footer > #main-footer > #contato {
@@ -36,18 +42,13 @@ footer > #main-footer {
     }
 
     #cadastro, #contato {
-        max-width: 300px;
+        max-width: 90%;
         padding: 10px 20px;
     }
 
     #enviar {
         max-width: 100px;
     }
-}
-
-#cadastro, #contato {
-    width: 50%;
-    padding: 0px 20px;
 }
 
 #inome {
