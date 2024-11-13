@@ -1,0 +1,25 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: "Bentham", serif;
+
+    --cor-laranja: #ff5e00;
+    --cor-marrom: #40240C;
+    --cor-cinza-claro: rgb(240, 240, 240);
+    --cor-cinza-medio: rgb(120, 120, 120);
+    --cor-preta: #000000;
+    --cor-branca: #ffffff;
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: var(--cor-marrom);
+}
+
+main {
+    height: 86.2vh;
+}

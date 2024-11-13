@@ -1,0 +1,22 @@
+footer {
+    bottom: 0;
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--cor-branca);
+}
+
+footer > p {
+    text-align: center;
+    color: var(--cor-marrom);
+    padding: 5px;
+}
+
+footer > p > a {
+    color: var(--cor-marrom);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    color: var(--cor-laranja);
+}

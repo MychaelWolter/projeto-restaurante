@@ -87,7 +87,7 @@ footer > #main-footer {
     transition: opacity 0.5s ease-in-out;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 62%;
     transform: translate(-50%, -50%);
     background-color: var(--cor-laranja);
     color: var(--cor-branca);
@@ -187,6 +187,10 @@ footer > #main-footer {
     #cadastro, #contato {
         max-width: 90%;
         padding: 10px 20px;
+    }
+
+    .mensagem {
+        top: 42%;
     }
 
     #enviar {
