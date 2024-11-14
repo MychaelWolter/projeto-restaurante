@@ -18,8 +18,9 @@
 body {
     font-family: var(--font-padrao);
     background-color: var(--cor-marrom);
+    height: 100vh;
 }
 
 main {
-    height: 86.2vh;
+    height: 87.91vh;
 }

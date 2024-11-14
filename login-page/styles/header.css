@@ -1,5 +1,5 @@
 header {
-    height: 70px;
+    height: 9vh;
     display: flex;
     background-color: var(--cor-branca);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);

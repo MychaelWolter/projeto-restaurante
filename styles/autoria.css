@@ -1,10 +1,10 @@
 footer > #autoria {
-    background-color: var(--cor-branca);   
+    background-color: var(--cor-branca);  
 }
 
 footer > #autoria > p {
     text-align: center;
-    padding: 5px;
+    padding: 0.65vh 0.5%;
 }
 
 footer > #autoria > p > a {

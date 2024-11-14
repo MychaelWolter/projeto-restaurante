@@ -31,42 +31,43 @@
     <main>
         <section id="entrar">
             <div id="esquerda">
-                <div id="titulo-entrar">
-                    <h2>Churrascaria</h2>
-                    <h3>Seja bem-vindo</h3>
-                    <p>Entre com seu e-mail e senha.</p>
-                </div>
                 <form action="#" method="post" id="form-entrar">
-                    <div>
-                        <label for="imail">E-mail</label> <br>
+                    <div id="titulo-entrar">
+                        <h2>Churrascaria</h2>
+                        <h3>Seja bem-vindo</h3>
+                        <p>Entre com seu e-mail e senha.</p>
+                    </div>
+                    <div id="container-mail-1">
+                        <label for="imail">E-mail</label>
                         <input type="email" name="mail" id="imail">
                     </div>
-                    <div>
-                        <label for="isenha">Senha</label> <br>
+                    <div id="container-senha-1">
+                        <label for="isenha">Senha</label> 
                         <input type="password" name="senha" id="isenha">
-                    <div>
+                    </div>
+                    <div id="container-check-1">
                         <input type="checkbox" name="relembrar" id="irelembrar">
                         <label for="irelembrar">Relembrar</label>
                         <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <div>
-                        <a href="../index.html">Entrar</a>
+                    <div id="login-button">
+                        <a href="#">Entrar</a>
                     </div>
-                    <div>
-                        <p>Não tem uma conta? <button onclick="criarConta()">Criar</button>.</p>
+                    <div id="sem-conta">
+                        <p>Não tem uma conta?</p><a onclick="criarConta()">Criar.</a>
                     </div>
                     <div id="alinhar-contato">
                         <a href="#">
-                            <img src="image/image/facebook-logo.png" alt="Facebook">
+                            <img src="../image/image/facebook-logo.png" alt="Facebook">
                         </a>
                         <a href="#">
-                            <img src="image/image/twitter-logo.png" alt="Twitter">
+                            <img src="../image/image/twitter-logo.png" alt="Twitter">
                         </a>
                         <a href="#">
-                            <img src="image/image/pinterest-logo.png" alt="Pinterest">
+                            <img src="../image/image/pinterest-logo.png" alt="Pinterest">
                         </a>
                         <a href="#">
-                            <img src="../image/" alt="Instagram">
+                            <img src="../image/image/instagram-logo.png" alt="Instagram">
                         </a>
                     </div>
                 </form>
@@ -80,22 +81,22 @@
         
             </div>
             <div id="direita">
-                <div id="titulo-cadastrar">
-                    <h2>Churrascaria</h2>
-                    <h3>Seja bem-vindo</h3>
-                    <p>Entre com seus dados.</p>
-                </div>
                 <form action="#" method="post" id="form-cadastrar">
-                    <div>
-                        <label for="inome">Nome completo</label> <br>
+                    <div id="titulo-cadastrar">
+                        <h2>Churrascaria</h2>
+                        <h3>Seja bem-vindo</h3>
+                        <p>Entre com seus dados.</p>
+                    </div>
+                    <div id="container-nome-1">
+                        <label for="inome">Nome completo</label>
                         <input type="text" name="nome" id="inome">
                     </div>
-                    <div>
-                        <label for="iemail">E-mail</label> <br>
+                    <div id="container-mail-2">
+                        <label for="iemail">E-mail</label> 
                         <input type="email" name="email" id="iemail">
                     </div>
-                    <div>
-                        <label for="isen">Senha</label> <br>
+                    <div id="container-senha-2">
+                        <label for="isen">Senha</label>
                         <input type="password" name="sen" id="isen">
                     <div>
                         <input type="checkbox" name="relembrar" id="irelembrar">
