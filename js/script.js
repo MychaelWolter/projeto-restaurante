@@ -1,12 +1,14 @@
-function menuButton(){
-    const menu = document.getElementById("menu-list");
-    
-    if(menu.style.display === "none" && window.innerWidth <= 500){
-        menu.style.display = "block";
-    }else{
-        menu.style.display = "none";
-    };
+const mobileButton = document.getElementById("mobileButton");
+
+const mobileMenuBar = () => {
+    const mobileMenu = document.getElementById("mobileMenu");
+    const i = mobileButton.querySelector("i");
+
+    mobileMenu.classList.toggle("active");
+    i.classList.toggle("fa-x");
 };
+
+mobileButton.addEventListener("click", mobileMenuBar)
 
 function mensagemMail() {
     const mensagem = document.getElementById("span-mensagem");

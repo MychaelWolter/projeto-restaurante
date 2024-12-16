@@ -6,6 +6,7 @@
     <title>Projeto Restaurante</title>
 
     <link rel="shortcut icon" href="image/logo-churrascaria.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <link rel="stylesheet" href="styles/header.css">
@@ -17,34 +18,61 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header id="inicio">
-        <div>
-            <img src="image/logo-churrascaria.jpg" alt="Logo-Churrascaria">
-        </div>
-        <nav id="menu">
-            <button id="menu-icon" onclick="menuButton()">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-            <div id="menu-list">
-                <a href="#inicio">INÍCIO</a>
-                <a href="login-page/login.html">CADASTRO</a>
-                <a href="#cardapio">CARDÁPIO</a>
-                <a href="#fotos">FOTOS</a>
-                <a href="#fale-conosco">CONTATO</a>
+    <header>
+        <nav id="navBar">
+            <div id="navLogo">
+                <img src="image/logo-churrascaria.jpg" alt="Logo Churrascaria">
             </div>
+
+            <ul id="navList">
+                <li class="navItem active">
+                    <a href="#fundo-churrasco">Início</a>
+                </li>
+                <li class="navItem">
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li class="navItem">
+                    <a href="#fotos">Fotos</a>
+                </li>
+                <li class="navItem">
+                    <a href="#fale-conosco">Contato</a>
+                </li>
+            </ul>
+
+            <div id="userContainer">
+                <a href="login-page/login.html" id="user">
+                    <i class="fa-regular fa-circle-user"></i>
+                </a>
+            </div>
+
+            <button id="mobileButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
-        <nav id="navegador">
-            <a href="#inicio">INÍCIO</a>
-            <a href="#cardapio">CARDÁPIO</a>
-            <a href="#fotos">FOTOS</a>
-            <a href="#fale-conosco">CONTATO</a>
-        </nav>
-        <div id="user-container">
-            <a href="login-page/login.html" id="user">
-                <span class="material-symbols-outlined">person</span>
-            </a>
+
+        <div id="mobileMenu">
+            <ul id="mobileNavList">
+                <li class="navItem">
+                    <a href="#inicio">Início</a>
+                </li>
+                <li class="navItem">
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li class="navItem">
+                    <a href="#fotos">Fotos</a>
+                </li>
+                <li class="navItem">
+                    <a href="#fale-conosco">Contato</a>
+                </li>
+                <li class="navItem">
+                    <a href="login-page/login.html" id="user">
+                        <i class="fa-regular fa-circle-user"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
+
     <section id="fundo-churrasco">
         <div>
             <h1>Churrasco</h1>
@@ -66,21 +94,24 @@
                             <div id="carne"></div>
                         </div>
                         <h3 class="titulo-cardapio">Carnes</h3>
-                        <p class="texto-cardapio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, consequuntur? Adipisci velit ducimus amet?</p>
+                        <p class="texto-cardapio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+                            consequuntur? Adipisci velit ducimus amet?</p>
                     </div>
                     <div class="opcoes-cardapio">
                         <div id="centralizar-sobremesa">
                             <div id="sobremesa"></div>
                         </div>
                         <h3 class="titulo-cardapio">Sobremesas</h3>
-                        <p class="texto-cardapio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta cum mollitia consequatur asperiores?</p>
+                        <p class="texto-cardapio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta cum
+                            mollitia consequatur asperiores?</p>
                     </div>
                     <div class="opcoes-cardapio">
                         <div id="centralizar-bebida">
                             <div id="bebida"></div>
                         </div>
                         <h3 class="titulo-cardapio">Bebidas</h3>
-                        <p class="texto-cardapio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptas alias doloribus consequuntur quidem!</p>
+                        <p class="texto-cardapio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                            voluptas alias doloribus consequuntur quidem!</p>
                     </div>
                 </div>
             </div>
@@ -127,7 +158,7 @@
                 </div>
                 <div id="span-mensagem" class="mensagem">
                     <p>Mensagem enviada com sucesso</p>
-                </div>                
+                </div>
                 <div>
                     <input type="reset" value="Enviar" id="enviar" onclick="mensagemMail()">
                 </div>
@@ -156,9 +187,11 @@
             </div>
         </section>
         <section id="autoria">
-            <p>Copyright &copy;. Tema Churrascaria 2024. Densenvolvido por <a href="https://www.instagram.com/wolterzx/" target="_blank" rel="external">Mychael Wolter</a></p>
+            <p>Copyright &copy;. Tema Churrascaria 2024. Densenvolvido por <a href="https://www.instagram.com/wolterzx/"
+                    target="_blank" rel="external">Mychael Wolter</a></p>
         </section>
     </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

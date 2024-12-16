@@ -1,124 +1,115 @@
 header {
-    height: 9vh;
-    display: flex;
+    width: 100%;
+    padding: 28px 8%;
 }
 
-header > div {
-    width: 5%;
+#navBar {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 10px 40px;
+    justify-content: space-between;
 }
 
-header > div > img {
-    height: 50px;
-    width: 50px;
+#navLogo {
+    height: 3em;
+    width: 3em;
 }
 
-header > nav#menu {
-    display: none;
+#navLogo img {
+    height: 3em;
+    width: 3em;
 }
 
-div#menu-list {
-    display: none;
+#navList {
+    display: flex;
+    list-style: none;
+    gap: 3em;
 }
 
-header > nav#navegador {
-    margin: auto;
-}
-
-header > nav#navegador > a {
-    padding: 27px 10px;
+.navItem a {
     text-decoration: none;
     color: var(--cor-preta);
-    font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-    font-size: 0.9em;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
-header > nav#navegador > a:hover {
-    background-color: var(--cor-laranja);
-    color: var(--cor-branca);
-    transition-duration: 0.5s;
+.navItem.active a {
+    color: var(--cor-marrom);
+    border-bottom: 3px solid var(--cor-laranja);
 }
 
-header > div#user-container {
-    width: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 30px;
+#userContainer {
+    width: 1.5em;
+    height: 1.5em;
 }
 
-div#user-container > a > span {
+#userContainer a {
+    text-decoration: none;
     color: var(--cor-preta);
 }
 
-div#user-container > a > span:hover {
-    color: var(--cor-laranja);
-    transition-duration: 0.5s;
+#userContainer a i {
+    font-size: 1.5em;
 }
 
-div#user-container > a > span:active {
+#userContainer a i:hover {
     color: var(--cor-laranja);
 }
 
-@media (width <= 565px) {
-    header > nav#menu {
+#mobileButton {
+    display: none;
+}
+
+#mobileMenu {
+    width: 12em;
+    background-color: var(--cor-branca);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    transform: translateX(30em);
+    opacity: 0;
+    transition: transform .5s ease, opacity .5s ease;
+}
+
+@media screen and (max-width: 1170px) {
+    #navList, #userContainer {
+        display: none;
+    }
+
+    #mobileButton {
+        display: block;
+        border: none;
+        background-color: var(--cor-branca);
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+
+    #mobileButton:hover {
+        color: var(--cor-laranja);
+    }
+
+    #mobileMenu.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #mobileNavList {
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: end;
-        margin-right: 5%;
+        flex-direction: column;
+        gap: 1em;
     }
 
-    header > nav#menu > button {
-        background-color: var(--cor-branca);
-        padding: 10px;
-        border: none;
-        margin: 10px 0px 10px 20px;
+    #mobileNavList .navItem {
+        list-style: none;
+        text-align: center;
     }
 
-    header > nav#menu > button:hover {
+    #mobileNavList .navItem a:hover {
         color: var(--cor-laranja);
-        cursor: pointer;
-        transition-duration: 0.5s;
-    }
-
-    header > nav#menu > button:active {
-        color: var(--cor-laranja);
-    }
-
-    div#menu-list {
-        display: none;
-        position: absolute;
-        top: 7%;
-        right: 0;
-        background-color: var(--cor-branca);
-        padding: 5px 20px;
-    }
-
-    div#menu-list > a {
-        display: block;
-        padding: 10px 15px;
-        text-decoration: none;
-        color: var(--cor-preta);
-        font-weight: bold;
-        font-size: 1em;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-    }
-
-    div#menu-list > a:hover {
-        color: var(--cor-laranja);
-        transition-duration: 0.5s;
-    }
-
-    header > nav#navegador {
-        display: none;
-    }
-
-    header > div#user-container {
-        display: none;
     }
 }
